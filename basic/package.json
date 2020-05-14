@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "lerna run --scope @basic/* --parallel start",
+    "build": "lerna run --scope @basic/* build",
+    "serve": "lerna run --scope @basic/* --parallel serve",
+    "clean": "lerna run --scope @basic/* --parallel clean"
+  }
+}
