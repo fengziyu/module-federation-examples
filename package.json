@@ -1,6 +1,8 @@
 {
   "name": "module-federation-examples",
   "version": "0.0.0",
+  "description": "自己写的一些Webpack 5's Module Federation的例子",
+  "author": "fengziyu <fengziyu528@gmail.com>",
   "private": true,
   "workspaces": {
     "packages": [
