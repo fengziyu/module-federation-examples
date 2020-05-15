@@ -1,3 +1,5 @@
+参考： https://github.com/module-federation/module-federation-examples
+
 ## module federation start
 
 ### 配置webpack
