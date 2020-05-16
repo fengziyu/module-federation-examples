@@ -1,12 +1,12 @@
 {
-  "name": "@basic/app1",
+  "name": "@basic/remote",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
-    "serve": "serve dist -p 3001",
+    "serve": "serve dist -p 3002",
     "clean": "rm -rf dist"
   },
   "dependencies": {

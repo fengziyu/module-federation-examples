@@ -8,10 +8,10 @@ module.exports = {
   mode: "development",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
-    port: 3001,
+    port: 3002,
   },
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "http://localhost:3002/",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
@@ -30,7 +30,12 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      remotes: ['app2'],
+      name: "remote",
+      library: { type: "var", name: "remote" },
+      filename: "remoteEntry.js",
+      exposes: {
+        'Button': './src/Button.tsx',
+      },
       shared: ["react", "react-dom"],
     }),
     new HtmlWebpackPlugin({

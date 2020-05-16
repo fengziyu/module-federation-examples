@@ -1,6 +1,6 @@
 /// <reference types="react" />
 
-declare module "app2/Button" {
+declare module "remote/Button" {
   const Button: React.ComponentType;
 
   export default Button;

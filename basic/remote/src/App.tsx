@@ -4,7 +4,7 @@ import Button from './Button';
 const App: React.FC = () => {
   return (
     <div>
-      app2
+      remote
       <Button/>
     </div>
   )

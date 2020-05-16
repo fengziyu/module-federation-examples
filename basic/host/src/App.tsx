@@ -1,11 +1,11 @@
 import React from 'react';
 
-const RemoteButton = React.lazy(() => import("app2/Button"));
+const RemoteButton = React.lazy(() => import("remote/Button"));
 
 const App: React.FC = () => {
   return <div>
     <React.Suspense fallback="Loading Button">
-      app1
+      host
       <RemoteButton />
     </React.Suspense>
   </div>
